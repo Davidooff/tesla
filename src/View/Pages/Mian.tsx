@@ -3,6 +3,7 @@ import TextLayout from "../Module/TextLayout";
 import { ImageBg } from "../Module/Background/ImageBg";
 import { VideoBg } from "../Module/Background/VideoBg";
 import "./default-styles.scss";
+import Header from "../Sections/Header";
 
 export interface DataElement {
   title: string;
@@ -69,6 +70,7 @@ function Mian() {
 
   return (
     <>
+      <Header color={content.color} />
       <div className="content" style={{ opacity, color: content.color }}>
         <TextLayout data={content.data} />
       </div>

@@ -1,0 +1,26 @@
+header {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: calc(100% - 40px);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  font-weight: 500;
+  font-size: 18px;
+  transition: color 0.5s;
+  nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  h1,
+  nav:last-child {
+    width: 300px;
+  }
+  nav:last-child ul {
+    justify-content: end;
+  }
+}
