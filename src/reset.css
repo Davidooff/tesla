@@ -132,6 +132,11 @@ video {
   height: 100%;
   object-fit: cover;
 }
+a,
+a:visited {
+  text-decoration: none;
+}
 #root {
   position: relative;
 }
+
