@@ -1,9 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+
+body {
+  font-family: "Roboto";
+}
+
 $defaul_white: rgb(255, 255, 255);
 $defaul_black: rgb(23, 26, 32);
 $defaul_gray: rgb(57, 60, 65);
 $defaul_gray_background: rgba(23, 26, 32, 0.8);
 $defaul_white_background: rgba(244, 244, 244, 0.65);
-$defaul_boreder_radius: 2px;
+$defaul_boreder_radius: 4px;
 $defaul_font_size: 16px;
 $title_font_size: 40px;
 
@@ -39,7 +45,9 @@ $transition_time: 0.3s;
   border: 3px solid $defaul_white;
   border-radius: $defaul_boreder_radius;
   padding: 0 24px;
-  height: 40px;
+  height: 35px;
+  transition: 1s;
+  background-color: transparent;
   span {
     line-height: 16.8px;
     display: inline-block;
@@ -48,20 +56,26 @@ $transition_time: 0.3s;
     min-width: 210px;
     text-align: center;
   }
+  &:hover {
+    background-color: $defaul_white;
+    span {
+      color: $defaul_black;
+    }
+  }
 }
 
 .a-btn-gray {
   display: grid;
   align-content: center;
-  background-color: $defaul_gray_background;
+  background-color: $defaul_white_background;
   border-radius: $defaul_boreder_radius;
-  padding: 4px 24px;
+  padding: 0 24px;
   height: 40px;
 
   span {
     line-height: 16.8px;
     display: inline-block;
-    color: $defaul_white;
+    color: $defaul_gray;
     font-size: $defaul_font_size;
     min-width: 210px;
     text-align: center;
@@ -73,7 +87,7 @@ $transition_time: 0.3s;
   align-content: center;
   background-color: $defaul_white_background;
   border-radius: $defaul_boreder_radius;
-  padding: 4px 24px;
+  padding: 0 24px;
   height: 40px;
 
   span {
@@ -89,9 +103,9 @@ $transition_time: 0.3s;
 .a-btn-black {
   display: grid;
   align-content: center;
-  background-color: $defaul_black;
+  background-color: $defaul_gray_background;
   border-radius: $defaul_boreder_radius;
-  padding: 4px 24px;
+  padding: 0 24px;
   height: 40px;
 
   span {
@@ -143,6 +157,7 @@ $transition_time: 0.3s;
 
 .title {
   text-align: center;
+  font-weight: 500;
   font-size: $title_font_size;
 }
 .under_title {

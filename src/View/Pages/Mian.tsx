@@ -54,6 +54,68 @@ const data: ViewEl[] = [
     color: "black",
     img: "https://digitalassets.tesla.com/tesla-contents/image/upload/h_2400,w_2880,c_fit,f_auto,q_auto:best/Homepage-Model-Y-Global-Desktop",
   },
+
+  {
+    data: {
+      title: "Model X",
+      description: "Plaid",
+      btns: [
+        { title: "Order Now", link: "/model-s", type: "a-btn-gray" },
+        { title: "Order Now", link: "/model-s", type: "a-btn-black" },
+      ],
+    },
+    color: "black",
+    img: "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Model-S-homepage-desktop",
+  },
+  {
+    data: {
+      title: "Model X",
+      description: "Plaid",
+      btns: [
+        { title: "Order Now", link: "/model-s", type: "a-btn-gray" },
+        { title: "Order Now", link: "/model-s", type: "a-btn-black" },
+      ],
+    },
+    color: "black",
+    img: "https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/Homepage-Model-X-Desktop-LHD",
+  },
+  {
+    data: {
+      title: "Model X",
+      description: "Plaid",
+      btns: [
+        { title: "Order Now", link: "/model-s", type: "a-btn-gray" },
+        { title: "Order Now", link: "/model-s", type: "a-btn-black" },
+      ],
+    },
+    color: "black",
+    img: "https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/425_HP_SolarPanels_D",
+  },
+
+  {
+    data: {
+      title: "Model X",
+      description: "Plaid",
+      btns: [
+        { title: "Order Now", link: "/model-s", type: "a-btn-gray" },
+        { title: "Order Now", link: "/model-s", type: "a-btn-black" },
+      ],
+    },
+    color: "black",
+    img: "https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/Homepage-SolarRoof-Desktop-Global",
+  },
+  {
+    data: {
+      title: "Model X",
+      description: "Plaid",
+      btns: [
+        { title: "Order Now", link: "/model-s", type: "a-btn-gray" },
+        { title: "Order Now", link: "/model-s", type: "a-btn-black" },
+      ],
+    },
+    color: "black",
+    img: "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Desktop_Accessories",
+  },
 ];
 
 function Mian() {
