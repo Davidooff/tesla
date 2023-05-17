@@ -132,3 +132,6 @@ video {
   height: 100%;
   object-fit: cover;
 }
+#root {
+  position: relative;
+}

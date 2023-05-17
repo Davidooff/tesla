@@ -4,6 +4,7 @@ import { ImageBg } from "../Module/Background/ImageBg";
 import { VideoBg } from "../Module/Background/VideoBg";
 import "./default-styles.scss";
 import Header from "../Sections/Header";
+import { Footer } from "../Sections/Footer";
 
 export interface DataElement {
   title: string;
@@ -82,6 +83,7 @@ function Mian() {
           </>
         );
       })}
+      <Footer />
     </>
   );
 }
