@@ -1,5 +1,23 @@
+@import "../../../reusable_styles/mixins.scss";
+
+
 .swiper-btns {
+    position: relative;
+
     button {
         border-radius: 50%;
+        @include square(12);
+        background-color: #5c5e62;
+        margin-left: 10px;
+
+        transition: 0.3s;
+    }
+
+    .activator-btn {
+        background-color: #FFFFFF;
+    }
+
+    .swiper-btn-active {
+        background-color: #FFFFFF;
     }
 }
