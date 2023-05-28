@@ -4,7 +4,9 @@ import { ImageBg } from "../Module/Background/ImageBg";
 import { VideoBg } from "../Module/Background/VideoBg";
 import "./default-styles.scss";
 import Header from "../Sections/Header";
+import { Routes, Route } from 'react-router-dom';
 import { Footer } from "../Sections/Footer";
+import { Swiper } from "../Module/Swiper";
 
 export interface DataElement {
   title: string;
@@ -118,6 +120,24 @@ const data: ViewEl[] = [
   },
 ];
 
+function GetJiu({ content, opacity, data } : { content: any, opacity: number, data: any }) {
+  return (
+    <>
+    <div className="content" style={{ opacity, color: content.color }}>
+        <TextLayout data={content.data} />
+      </div>
+      {data.map((el: any) => {
+        return (
+          <>
+            {el.img && <ImageBg url={el.img} />}
+            {el.video && <VideoBg url={el.video} />}
+          </>
+        );
+      })}
+    </>  
+  )
+}
+
 function Mian() {
   const [content, setContent] = useState(data[0]);
   const [opacity, setOpacity] = useState(1);
@@ -134,17 +154,41 @@ function Mian() {
   return (
     <>
       <Header color={content.color} />
-      <div className="content" style={{ opacity, color: content.color }}>
-        <TextLayout data={content.data} />
-      </div>
-      {data.map((el) => {
-        return (
-          <>
-            {el.img && <ImageBg url={el.img} />}
-            {el.video && <VideoBg url={el.video} />}
-          </>
-        );
-      })}
+      <Routes>
+        <Route
+          path="/"
+          element={
+          <GetJiu
+            content={content}
+            opacity={opacity}
+            data={data}
+          />
+        }
+        />
+        <Route
+          path="/2"
+          element={
+            <Swiper>
+              <VideoBg
+                 url="https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto/Homepage-Test_Drive-NA-Desktop.mp4"
+                 startTime={0}
+              />
+              <VideoBg
+                url="https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto:best/Model-X-Interior-Carousel-1-Cinematic-Display-Desktop-Global.mp4"
+                startTime={0} 
+              />
+              <VideoBg
+                url="https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto:best/Range_Desktop-mp4.mp4"
+                startTime={0}
+              />
+              <VideoBg
+                url="https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto:best/Model-X-Interior-Carousel-5-Console-Grade-Gaming-Desktop-Global.mp4"
+                startTime={0} 
+              />
+            </Swiper>
+          } 
+        />
+      </Routes>
       <Footer />
     </>
   );
