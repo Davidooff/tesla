@@ -14,11 +14,8 @@
     "ramda": "^0.29.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-<<<<<<< HEAD
     "react-router-dom": "^6.11.2",
-=======
     "react-intersection-observer": "^9.4.3",
->>>>>>> 12f88c941eabdd2bd6c749e7cd41d4232ea98f26
     "sass": "^1.62.1"
   },
   "devDependencies": {
