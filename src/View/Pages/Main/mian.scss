@@ -1,0 +1,36 @@
+// SCROLLER
+
+html {
+    scroll-snap-type: y mandatory;
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    video {
+        width: 100%;
+    }
+}
+
+.content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 200px 30px 80px 30px;
+    width: calc(100vw - 60px);
+    height: calc(100vh - 280px);
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
