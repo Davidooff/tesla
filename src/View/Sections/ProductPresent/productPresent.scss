@@ -1,5 +1,47 @@
 .product-present {
+    padding: 150px 50px 50px 50px;
+    height: calc(100vh - 200px);
+    background-position: center;
+    position: relative;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    .badges {
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        font-weight: 500;
+        .badge_title {
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            span {
+                font-size: 20px;
+                margin-left: 5px;
+            }
+        }
+        .badge_under-title {
+            font-size: 14px;
+            text-align: center;
+            margin-top: 5px;
+        }
+    }
+    .btns {
+        margin-top: 20px;
+    }
+    .gradient-line {
+        background: rgb(0, 0, 0);
+        background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 1) 100%
+        );
+        width: 100vw;
+        height: 50px;
+        position: absolute;
+        bottom: 0;
+    }
 }

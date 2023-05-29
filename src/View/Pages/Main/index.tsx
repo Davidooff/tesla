@@ -1,4 +1,5 @@
 import "./mian.scss";
+import style from "./mian.scss?inline";
 import { useState, useEffect } from "react";
 import { ImageBg } from "../../Module/Background/ImageBg";
 import { VideoBg } from "../../Module/Background/VideoBg";
@@ -133,15 +134,18 @@ function Main() {
     return (
         <>
             <Header color={content.color} />
-            <div className="content" style={{ opacity, color: content.color }}>
+            <div
+                className="content-main"
+                style={{ opacity, color: content.color }}
+            >
                 <TextLayout data={content.data} />
             </div>
             {data.map((el: any) => {
                 return (
-                    <>
+                    <div className="scrolling">
                         {el.img && <ImageBg url={el.img} />}
                         {el.video && <VideoBg url={el.video} />}
-                    </>
+                    </div>
                 );
             })}
         </>

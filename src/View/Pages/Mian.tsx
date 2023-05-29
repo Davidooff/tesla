@@ -36,7 +36,7 @@ function Mian() {
                     }
                 />
             </Routes>
-            <Footer />
+            {/* <Footer /> */}
         </>
     );
 }

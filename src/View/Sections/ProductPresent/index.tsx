@@ -55,6 +55,7 @@ function Product(props: ProductPresentProps) {
                         })}
                 </div>
             </div>
+            <div className="gradient-line"></div>
         </section>
     );
 }
