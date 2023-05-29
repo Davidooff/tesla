@@ -2,3 +2,9 @@
     width: #{$a}px;
     height: #{$a}px;
 }
+
+@mixin hover() {
+    &:hover {
+        @content;
+    }
+}

@@ -1,19 +1,14 @@
-import React, { ReactElement, cloneElement, useCallback, useEffect, useRef, useState } from "react";
+import React, { ReactElement, cloneElement, useCallback, useState } from "react";
 import { SwiperBtns } from "./SwiperBtns";
 
 type ReactComponent = React.ReactNode;
-
-interface SwiperComponent {
-  videoTime: number;
-  element: ReactComponent;
-}
 
 interface Props {
   children: ReactComponent[];
 }
 
 export const Swiper: React.FC<Props> = ({ children }) => {
-  const [content, setContent] = useState<ReactComponent[]>(
+  const [content, _] = useState<ReactComponent[]>(
       children
   );
   
