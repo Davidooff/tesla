@@ -1,0 +1,33 @@
+.img-and-description {
+    color: white;
+    background-color: black;
+    padding: 100px 50px;
+    .content {
+        max-width: 1300px;
+        margin-inline: auto;
+    }
+    .img-and-description_el {
+        display: flex;
+        img {
+            width: 50%;
+        }
+        div {
+            width: calc(50% - 100px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-inline: 50px;
+            font-size: 14px;
+            h2 {
+                font-weight: 500;
+                margin-bottom: 15px;
+            }
+            p {
+                line-height: 20px;
+            }
+        }
+        &.reverse {
+            flex-direction: row-reverse;
+        }
+    }
+}

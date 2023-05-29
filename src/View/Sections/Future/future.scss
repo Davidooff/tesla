@@ -1,0 +1,26 @@
+.future {
+    color: white;
+    padding-top: 100px;
+    background: black;
+    .image-container {
+        margin-top: 50px;
+        position: relative;
+        height: 80vh;
+        .line-gradient {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 50px;
+            background: rgb(0, 0, 0);
+            background: linear-gradient(
+                0,
+                rgba(0, 0, 0, 0) 0%,
+                rgba(0, 0, 0, 1) 100%
+            );
+        }
+        section {
+            height: 100%;
+        }
+    }
+}
