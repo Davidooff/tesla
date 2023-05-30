@@ -3,6 +3,8 @@ import Product, { ProductPresentProps } from "../../Sections/ProductPresent";
 import "./model.scss";
 import Future from "../../Sections/Future";
 import ImgAndDesc from "../../Sections/ImgAndDesc";
+import PromoText from "../../Sections/PromoText";
+import PromoImage from "../../Sections/PromoImage";
 
 const data = [
     {
@@ -62,6 +64,42 @@ const data = [
             ],
         },
     },
+    {
+        promoText: {
+            title: "Stay Connected",
+            sub_title: "Plaid",
+            btns: [
+                {
+                    title: "Stay Connected",
+                    type: "a-btn-white",
+                },
+                {
+                    title: "Stay Disconnected",
+                    type: "a-btn-black",
+                },
+            ],
+            promo_text:
+                "Model S Plaid has the quickest acceleration of any vehicle in production. Updated battery architecture for all Model S trims enables back-to-back track runs without performance degradation. Chat with a Tesla Advisor to learn more about Model S or schedule a demo drive today. ",
+        },
+    },
+    {
+        promoImage: {
+            title: "Stay Connected",
+            sub_title: "Plaid",
+            btns: [
+                {
+                    title: "Stay Connected",
+                    type: "a-btn-white",
+                },
+                {
+                    title: "Stay Disconnected",
+                    type: "a-btn-black",
+                },
+            ],
+            promo_img:
+                "https://digitalassets.tesla.com/tesla-contents/image/upload/h_998,w_1800,c_fit,f_auto,q_auto:best/Model-S-Order-Hero-Desktop-Mobile-LHD",
+        },
+    },
 ];
 
 function Model() {
@@ -78,6 +116,12 @@ function Model() {
                         {section.future && <Future {...section.future} />}
                         {section.imgAndDescription && (
                             <ImgAndDesc {...section.imgAndDescription} />
+                        )}
+                        {section.promoText && (
+                            <PromoText {...section.promoText} />
+                        )}
+                        {section.promoImage && (
+                            <PromoImage {...section.promoImage} />
                         )}
                     </>
                 );

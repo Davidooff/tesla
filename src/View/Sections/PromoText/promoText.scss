@@ -1,0 +1,23 @@
+.promo-text {
+    display: flex;
+    padding: 50px;
+    background-color: #fff;
+    .left-aside {
+        width: 45%;
+        h2 {
+            font-size: 17px;
+            margin-bottom: 5px;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+    }
+    .right-aside {
+        width: 55%;
+        font-size: 14px;
+        line-height: 20px;
+        color: rgb(57, 60, 65);
+    }
+}
